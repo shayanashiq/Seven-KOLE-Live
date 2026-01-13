@@ -35,9 +35,10 @@ const Index = () => {
                 <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
               </svg>
             }
-            value="1,247"
+            targetValue={1247}
+            duration={1000}
             label="Active Participants"
-            change="↑ 8.2%"
+            change="8.2%"
             isPositive={true}
             subLabel="Active KOLS"
             subValue="71,632"
@@ -49,10 +50,12 @@ const Index = () => {
                 <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
               </svg>
             }
-            value="2,847"
+            
+            targetValue={2847}
+            duration={1000}
             currency="USDT"
             label="Daily Distribution"
-            change="↓ 2.1%"
+            change="2.1%"
             isPositive={false}
             subLabel="Yesterday"
             subValue="3,125"
@@ -72,10 +75,11 @@ const Index = () => {
                 <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
               </svg>
             }
-            value="18,432"
+            targetValue={18432}
+            duration={1000}
             currency="USDT"
             label="This Week"
-            change="↑ 12.4%"
+            change="12.4%"
             isPositive={true}
             subLabel="This Month"
             subValue="76,234"
@@ -89,10 +93,11 @@ const Index = () => {
                 <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
               </svg>
             }
-            value="542,891"
+            targetValue={542891}
+            duration={1000}
             currency="USDT"
             label="Total Distributed"
-            change="↑ 156.7%"
+            change="156.7%"
             isPositive={true}
             subLabel="Insurance Pool"
             subValue="100"
@@ -107,9 +112,9 @@ const Index = () => {
         </div>
 
         {/* Revenue Chart */}
-        <div className="mb-8">
+        {/* <div className="mb-8">
           <RevenueChart />
-        </div>
+        </div> */}
 
         {/* Rewards Management */}
         <div className="mb-8">
